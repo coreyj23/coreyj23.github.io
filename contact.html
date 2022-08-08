@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BodyLove Care</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="icon" href="images/browser-logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+
+<body class="cbwhole">
+		<div id="header">
+			<nav>
+  	<a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+
+    <ul class="Home-menu">
+					<li>
+						<a class="homecolor"href="index.html">Home</a>
+					</li>
+
+					<li>
+						<a href="services.html">Services</a>
+
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+      </nav>
+			</div>
+
+      <br><br>
+      <h1 class="contactmetitle">Contact</h1>
+      <br>
+      <hr class="contacthr">
+		<center><p class="contactmetext">Want to schedule an appointment or have any questions? Feel free to contact me utilizing the sources below.</p></center>
+	  <br><center><a href="services.html"><button class="viewservicesbtn">View Services</button></a></center><br><br><br>
+
+<div class="containercontact">
+  <br>
+
+<div class="contact-box">
+  <div class="contact-left">
+ <center><h1>Send A Message</h1> </center>
+  <br><br>
+
+<div class="contact-form">
+
+<form action="https://formspree.io/f/mdojnrbg" method="POST">
+
+<div class="input-row">
+  <div class="input-group">
+    <label>Name:</label>
+    <input name="name" type="text" placeholder="Your Name" required>
+  </div>
+  <br>
+  <div class="input-group">
+    <label>Email:</label>
+    <input name="email" type="email" placeholder="YourEmail@email.com" required>
+  </div>
+  </div
+  <br>
+  <div class="input-row">
+  <div class="input-group">
+    <label>Phone:</label>
+    <input name="phone" type="tel" placeholder="813-293-2940" required>
+  </div>
+<br>
+  <div class="input-group">
+    <label>Subject:</label>
+    <input name="subject" type="text" placeholder="*Reason For Email*" required>
+  </div>
+</div>
+
+<label>Message:</label>
+<textarea name="message" rows="10" placeholder="Type Your Message" required> </textarea>
+
+<br><br>
+<button class="contactbtn" name="submit" type="submit">Send</button>
+</form>
+
+</div>
+
+
+  </div>
+  <div class="contact-right">
+<center><h1>Contact Me</h1></center>
+
+  <br>
+
+	<table>
+	<tr>
+		<td>Email:</td>
+		<td><a class="links" href="mailto:Bodylovecare6@gmail.com">Bodylovecare6@gmail.com</a</td>
+	</tr>
+
+	<tr>
+		<td>Phone:</td>
+		<td><a class="links" href="tel:7863394477">786-339-4477</a></td>
+	</tr>
+
+	<tr>
+		<td>Address:</td>
+		<td><a  class="links" href="https://goo.gl/maps/vMEmLp6sZmvMuS5w7">10846 Carloway Hills Dr. <br> Wimauma, Fl 33598</a></td>
+	</tr>
+
+</table>
+
+<center><h1>Follow Me</h1></center>
+<br>
+
+<a class="instagram-logo" href="https://www.instagram.com/bodylovecare6/"><img class="instagram-logo" src="images/instagram.png" alt="instagram-link"></a>
+
+    </div>
+</div>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.619534163988!2d-82.32758088477807!3d27.75987878277026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2d6f56dc10af7%3A0x80cf43835f52045f!2s10846%20Carloway%20Hills%20Dr%2C%20Wimauma%2C%20FL%2033598!5e0!3m2!1sen!2sus!4v1645994039074!5m2!1sen!2sus"width="100%" height="450" allowfullscreen="" loading="lazy" frameBorder="0"></iframe>
+
+<div id="footer">
+	<div>
+
+	<center><img class="footer-logo" src="images/logo.png" alt="logo"></center>
+	<center><a href="https://www.instagram.com/bodylovecare6/" class="social"><img class="instagram-logo" src="images/instagram.png" alt="instagram-link"></a></center>
+		<p>&copy; 2022 BodyLove Care. All Rights Reserved.</p>
+	</div>
+</div>
+<button onclick="topFunction()" id="contactbutton">&#8679;</button>
+
+				<script>
+				var mybutton = document.getElementById("contactbutton");
+				window.onscroll = function() {
+				  scrollFunction()
+				};
+
+				function scrollFunction() {
+				  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				    mybutton.style.display = "block";
+				  } else {
+				    mybutton.style.display = "none";
+				  }
+				}
+				// Bind your button click, scroll direction and effect speed
+				document.getElementById("contactbutton").onclick = function() {
+				  scrollTo(0, 700); // it will take 8 seconds to reach to top.
+
+				}
+
+				// Element to move, time in ms to animate
+				function scrollTo(element, duration) {
+				  var e = document.documentElement;
+				  if (e.scrollTop === 0) {
+				    var t = e.scrollTop;
+				    ++e.scrollTop;
+				    e = t + 1 === e.scrollTop-- ? e : document.body;
+				  }
+				  scrollToC(e, e.scrollTop, element, duration);
+				}
+
+				// Element to move, element or px from, element or px to, time in ms to animate
+				function scrollToC(element, from, to, duration) {
+				  if (duration <= 0) return;
+				  if (typeof from === "object") from = from.offsetTop;
+				  if (typeof to === "object") to = to.offsetTop;
+
+				  scrollToX(element, from, to, 0, 1 / duration, 20, easeOutCuaic);
+				}
+
+				function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
+				  if (t01 < 0 || t01 > 1 || speed <= 0) {
+				    element.scrollTop = xTo;
+				    return;
+				  }
+				  element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
+				  t01 += speed * step;
+				  debugger;
+				  setTimeout(function() {
+				    scrollToX(element, xFrom, xTo, t01, speed, step, motion);
+				  }, step);
+				}
+
+				function easeOutCuaic(t) {
+				  t--;
+				  return t * t * t + 1;
+				}
+</script>
+  </body>
+  </html>

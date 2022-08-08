@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BodyLove Care</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="icon" href="images/browser-logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+
+<body class="sbwhole">
+		<div id="header">
+			<nav>
+  	<a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+
+    <ul class="Home-menu">
+					<li>
+						<a class="homecolor"href="index.html">Home</a>
+					</li>
+
+					<li>
+						<a href="services.html">Services</a>
+
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+      </nav>
+			</div>
+
+      <br>
+      <div class="services-container">
+    <h1 class="servicestitle">Services</h1>
+    <br>
+    <p class="servicestext">At BodyLove Care you are at the care of Dejah Joseph. You can find the treatment that best suits your needs below. I specialize in Lipo Cavitation, Skin Tightening, Laser Lipo, and Wood Therapy.
+			<br><br>
+			<center>
+			<h1 class="payment-text">
+			&nbsp &nbsp *Payment Method: In-Person Debit/Credit Card*</h1>
+			</center>
+		 </p>
+
+		 <div class="services-card-container">
+
+    <h2 class="services-treatments">Lipo Cavitation</h2>
+
+    <p class="treatment-desc"><br>This non-surgical treatment is for fat-reduction purposes, using an ultrasound method the fat underneath the skin is broken down, dissolved, and naturally eliminated. In terms of the application, a gel is placed on the skin to assist the treatment.</p>
+
+		<p class="treatment-cost">$70</p>
+		<a href="contact.html">Schedule</a>
+    </div>
+
+		<div class="services-card-container">
+
+    <h2 class="services-treatments">Skin Tightening</h2>
+    <br>
+    <p class="treatment-desc"><br>This non-surgical treatment is for tightening the skin, using an ultrasound method the fat underneath the skin is broken down, dissolved, and naturally eliminated. In terms of the application, a gel is placed on the skin to assist the treatment.</p>
+
+		<p class="treatment-cost">$75</p>
+		<a href="contact.html">Schedule</a>
+   </div>
+
+
+		<div class="services-card-container">
+
+    <h2 class="services-treatments">Laser Lipo</h2>
+    <br>
+    <p class="treatment-desc"><br>This non-surgical treatment involves no suctioning compared to the standard liposuction procedure, using laser energy throughout the treatment this method naturally burns fat from the body through metabolic processes allowing it to eliminate fat on its own. </p>
+
+    <p class="treatment-cost">$50</p>
+		<a href="contact.html">Schedule</a>
+		</div>
+
+		<div class="services-card-container">
+    <h2 class="services-treatments">Wood Therapy</h2>
+    <br>
+    <p class="treatment-desc"><br>This treatment is for body-contouring purposes, using a wooden tool in repetitive motion this method aids in toning and sculping the body.</p>
+
+		<p class="treatment-cost">$65</p>
+		<a href="contact.html">Schedule</a>
+    </div>
+      </div>
+
+
+			<div id="footer">
+				<div>
+
+				<center><img class="footer-logo" src="images/logo.png" alt="logo"></center>
+				<center><a href="https://www.instagram.com/bodylovecare6/" class="social"><img class="instagram-logo" src="images/instagram.png" alt="instagram-link"></a></center>
+					<p>&copy; 2022 BodyLove Care. All Rights Reserved.</p>
+				</div>
+			</div>
+
+			<button onclick="topFunction()" id="servicesbutton">&#8679;</button>
+
+         <script>
+      				var mybutton = document.getElementById("servicesbutton");
+      				window.onscroll = function() {
+      				  scrollFunction()
+      				};
+
+      				function scrollFunction() {
+      				  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      				    mybutton.style.display = "block";
+      				  } else {
+      				    mybutton.style.display = "none";
+      				  }
+      				}
+      				// Bind your button click, scroll direction and effect speed
+      				document.getElementById("servicesbutton").onclick = function() {
+      				  scrollTo(0, 700); // it will take 8 seconds to reach to top.
+
+      				}
+
+      				// Element to move, time in ms to animate
+      				function scrollTo(element, duration) {
+      				  var e = document.documentElement;
+      				  if (e.scrollTop === 0) {
+      				    var t = e.scrollTop;
+      				    ++e.scrollTop;
+      				    e = t + 1 === e.scrollTop-- ? e : document.body;
+      				  }
+      				  scrollToC(e, e.scrollTop, element, duration);
+      				}
+
+      				// Element to move, element or px from, element or px to, time in ms to animate
+      				function scrollToC(element, from, to, duration) {
+      				  if (duration <= 0) return;
+      				  if (typeof from === "object") from = from.offsetTop;
+      				  if (typeof to === "object") to = to.offsetTop;
+
+      				  scrollToX(element, from, to, 0, 1 / duration, 20, easeOutCuaic);
+      				}
+
+      				function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
+      				  if (t01 < 0 || t01 > 1 || speed <= 0) {
+      				    element.scrollTop = xTo;
+      				    return;
+      				  }
+      				  element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
+      				  t01 += speed * step;
+      				  debugger;
+      				  setTimeout(function() {
+      				    scrollToX(element, xFrom, xTo, t01, speed, step, motion);
+      				  }, step);
+      				}
+
+      				function easeOutCuaic(t) {
+      				  t--;
+      				  return t * t * t + 1;
+      				}
+				</script>
+</body>
+</html>

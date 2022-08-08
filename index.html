@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BodyLove Care</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="icon" href="images/browser-logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lusitana&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+
+<body>
+
+			<nav>
+  	<a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+
+
+			<ul class="Home-menu">
+					<li>
+						<a class="homecolor"href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="#homeabout">About</a>
+
+					</li>
+					<li>
+						<a href="services.html">Services</a>
+
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+
+      </nav>
+
+			<header>
+
+				<img src="images/leaf2.png" alt="">
+
+				<img src="images/leaf1.png" alt="">
+
+				<div class="hbimage">
+				<div class="inner_box">
+				  <h2>THE LOVE & CARE <br> YOUR BODY DESIRES</h2>
+
+
+					<a href ="contact.html"><button class="schedulebutton">Schedule An Appointment</button></a>
+				</div>
+				</div>
+
+			</header>
+			<br>
+<div id="homeabout">
+
+					<h1>Our Mission</h1>
+
+					<div class="homeabout-content">
+					<p>At BodyLoveCare, we take pride in a different approach, our customers' satisfaction is our top priority. We are dedicated to providing the highest quality body care to make sure our clients reach their goals.</p>
+
+
+
+					<h2>Certified Body Sculpting Specialist</h2>
+					<br>
+					<hr>
+					<img src="images/about-img.JPG" alt="">
+
+					</div>
+
+</div>
+
+
+<div class="homeservices">
+
+	<h1>What We Offer</h1>
+	<center><p>*Access Further Details Below*</p></center>
+
+
+		<center>
+		<div class="homeservices-box">
+<img src="images/massage-icon.png" alt="Massage-icon">
+<hr>
+<p>Lipo Cavitation</p>
+		</div>
+
+		<div class="homeservices-box">
+<img src="images/massage-icon.png" alt="Massage-icon">
+<hr>
+<p>Skin Tightening</p>
+		</div>
+
+		<div class="homeservices-box">
+<img src="images/massage-icon.png" alt="Massage-icon">
+<hr>
+<p>Laser Lipo</p>
+		</div>
+
+		<div class="homeservices-box">
+<img src="images/massage-icon.png" alt="Massage-icon">
+<hr>
+<p>Wood Therapy</p>
+		</div>
+	</center>
+
+	<a href="services.html"><button>Learn More</button></a>
+
+</div>
+
+<div class="homecontact">
+	<h1>Get In Touch</h1>
+	<center>
+		<table>
+		<tr>
+			<td><img src="images/phone.svg" alt=""></td>
+			<td><a class="homecontact-links" href="tel:7863394477">786-339-4477</a></td>
+		</tr>
+
+		<tr>
+			<td><img src="images/mail.svg" alt=""></td>
+			<td><a class="homecontact-links" href="mailto:Bodylovecare6@gmail.com">Bodylovecare6@gmail.com</a</td>
+		</tr>
+
+		<tr>
+			<td><img src="images/location.svg" alt=""></td>
+			<td><a  class="homecontact-links" href="https://goo.gl/maps/vMEmLp6sZmvMuS5w7">10846 Carloway Hills Dr. <br> Wimauma, Fl 33598</a></td>
+		</tr>
+
+	</table>
+
+	</center>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.619534163988!2d-82.32758088477807!3d27.75987878277026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2d6f56dc10af7%3A0x80cf43835f52045f!2s10846%20Carloway%20Hills%20Dr%2C%20Wimauma%2C%20FL%2033598!5e0!3m2!1sen!2sus!4v1645994039074!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+		<div id="footer">
+			<div>
+
+			<center><img class="footer-logo" src="images/logo.png" alt="logo"></center>
+			<center><a href="https://www.instagram.com/bodylovecare6/"><img class="instagram-logo" src="images/instagram.png" alt="instagram-link"></a></center>
+				<p>&copy; 2022 BodyLove Care. All Rights Reserved.</p>
+			</div>
+		</div>
+		<button onclick="topFunction()" id="servicesbutton">&#8679;</button>
+
+						<script>
+						var mybutton = document.getElementById("servicesbutton");
+						window.onscroll = function() {
+							scrollFunction()
+						};
+
+						function scrollFunction() {
+							if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+								mybutton.style.display = "block";
+							} else {
+								mybutton.style.display = "none";
+							}
+						}
+						// Bind your button click, scroll direction and effect speed
+						document.getElementById("servicesbutton").onclick = function() {
+							scrollTo(0, 700); // it will take 7 seconds to reach to top.
+
+						}
+
+						// Element to move, time in ms to animate
+						function scrollTo(element, duration) {
+							var e = document.documentElement;
+							if (e.scrollTop === 0) {
+								var t = e.scrollTop;
+								++e.scrollTop;
+								e = t + 1 === e.scrollTop-- ? e : document.body;
+							}
+							scrollToC(e, e.scrollTop, element, duration);
+						}
+
+						// Element to move, element or px from, element or px to, time in ms to animate
+						function scrollToC(element, from, to, duration) {
+							if (duration <= 0) return;
+							if (typeof from === "object") from = from.offsetTop;
+							if (typeof to === "object") to = to.offsetTop;
+
+							scrollToX(element, from, to, 0, 1 / duration, 20, easeOutCuaic);
+						}
+
+						function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
+							if (t01 < 0 || t01 > 1 || speed <= 0) {
+								element.scrollTop = xTo;
+								return;
+							}
+							element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
+							t01 += speed * step;
+							debugger;
+							setTimeout(function() {
+								scrollToX(element, xFrom, xTo, t01, speed, step, motion);
+							}, step);
+						}
+
+						function easeOutCuaic(t) {
+							t--;
+							return t * t * t + 1;
+						}
+		</script>
+</body>
+</html>
