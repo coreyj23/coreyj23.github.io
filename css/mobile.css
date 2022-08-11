@@ -12,14 +12,17 @@ justify-content: center;
   }
 
   nav ul{
-  	margin: 0 auto 0 20px;
+    display: flex;
   }
 
-  nav ul {
-  justify-content: center;
-  z-index: 99;
-  width: fit-content;
+  nav ul li{
+    display: inline-block;
+    margin: 0 17px;
+  	position: relative;
+  	right: 0;
+  	padding: 20px 0;
   }
+
 
 .hbimage{
   margin: -15px auto;
@@ -32,7 +35,7 @@ justify-content: center;
     display: block;
 
     font-size: 8.44vw;
-    margin: 10px auto 0 auto;
+    margin: 10px auto 15px auto;
 }
 
 .schedulebutton{
@@ -67,7 +70,7 @@ header img:nth-child(1){
 	width: 280px;
 	position: absolute;
 	left: 45px;
-	top: 645px;
+	top: 640px;
 	transform: rotate(-20deg);
 }
 
@@ -75,7 +78,7 @@ header img:nth-child(2){
   height: 280px;
 	width: 280px;
 	position: absolute;
-	right: 15px;
+	right: 38px;
 	top: 640px;
 }
 
@@ -100,20 +103,21 @@ position: relative;
 iframe{
   height: 350px;
 }
+
+.instagram-logo{
+	height: 70px;
+	width: 70px;
+  padding: 25px 0 0 0;
+}
 }
 
 @media all and (max-width: 1295px) {
 
 
-  .homeabout-content p{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  	line-height: 1.7;
-    width: 90%;
-    font-size: 3.3vw;
-    text-align: center;
+
+  #homeabout-text{
+  	width: 75%;
+  	font-size: 1.65rem;
   }
 
 .homeservices-box{
@@ -148,6 +152,8 @@ iframe{
   	transform: translateX(-50%);
     width: fit-content;
     }
+
+
 
     .servicestitle{
     	font-size: 4.5rem;
