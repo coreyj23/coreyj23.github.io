@@ -59,16 +59,19 @@
 					<h1>Our Mission</h1>
 
 					<div class="homeabout-content">
-					<p>At BodyLoveCare, we take pride in a different approach, our customers' satisfaction is our top priority. We are dedicated to providing the highest quality body care to make sure our clients reach their goals.</p>
+					<p id="homeabout-text">At BodyLoveCare, we take pride in a different approach, our customers' satisfaction is our top priority. We are dedicated to providing the highest quality body care to make sure our clients reach their goals.</p>
+          </div>
 
-
+          <div class="homeabout-specialist">
 
 					<h2>Certified Body Sculpting Specialist</h2>
 					<br>
 					<hr>
 					<img src="images/about-img.JPG" alt="">
+					<h3>Dejah Joseph</h3>
+         </div>
 
-					</div>
+
 
 </div>
 
@@ -147,10 +150,13 @@
 		</div>
 		<button onclick="topFunction()" id="servicesbutton">&#8679;</button>
 
+
+
 						<script>
 						var mybutton = document.getElementById("servicesbutton");
 						window.onscroll = function() {
 							scrollFunction()
+							appearFunction()
 						};
 
 						function scrollFunction() {
@@ -203,6 +209,18 @@
 							t--;
 							return t * t * t + 1;
 						}
+
+
+							/* Home About Section (text) Start*/
+							function appearFunction(){
+							if (document.documentElement.scrollTop > 400) {
+								document.getElementById("homeabout-text").className = "homeabout-text-appear";
+							}
+						}
+							/* Home About Section (text) End */
+
 		</script>
+
+
 </body>
 </html>

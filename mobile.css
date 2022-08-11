@@ -1,0 +1,307 @@
+/*Home*/
+
+@media all and (max-width: 948px) {
+
+
+nav{
+  padding: 0 0 150px 0;
+}
+  .logo{
+  display: flex;
+justify-content: center;
+  }
+
+  nav ul{
+    display: flex;
+  }
+
+  nav ul li{
+    display: inline-block;
+    margin: 0 17px;
+  	position: relative;
+  	right: 0;
+  	padding: 20px 0;
+  }
+
+
+.hbimage{
+  margin: -15px auto;
+
+  height: 38rem;
+}
+
+
+  div.inner_box h2 {
+    display: block;
+
+    font-size: 8.44vw;
+    margin: 10px auto 15px auto;
+}
+
+.schedulebutton{
+  font-size: 4vw;
+}
+
+
+#homebutton {
+	display: none;
+	position: fixed;
+	bottom: 25px;
+	right: 35px;
+  z-index: 99;
+	font-size: 70px;
+	border: none;
+	outline: none;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	padding: 0 10px 2px 10px;
+	border-radius: 50%;
+		transition: .4s;
+}
+
+#homebutton:hover {
+	background-color: #555;
+}
+
+
+header img:nth-child(1){
+	height: 280px;
+	width: 280px;
+	position: absolute;
+	left: 45px;
+	top: 640px;
+	transform: rotate(-20deg);
+}
+
+header img:nth-child(2){
+  height: 280px;
+	width: 280px;
+	position: absolute;
+	right: 38px;
+	top: 640px;
+}
+
+.inner_box{
+position: relative;
+  top: 300px;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  padding: 30px;
+  text-align:center;
+	max-width: 100%;
+	height: 510px;
+	color: #6B6B6B;
+}
+
+.homeservices{
+		background:#6f7377;
+	padding: 175px 0 ;
+}
+
+
+iframe{
+  height: 350px;
+}
+
+.instagram-logo{
+	height: 70px;
+	width: 70px;
+  padding: 25px 0 0 0;
+}
+}
+
+@media all and (max-width: 1295px) {
+
+
+
+  #homeabout-text{
+  	width: 75%;
+  	font-size: 1.65rem;
+  }
+
+.homeservices-box{
+	background: #3d444f;
+	margin: 30px 0;
+	padding: 165px 135px;
+ border-radius: 3%;
+}
+}
+
+/*Home End*/
+
+/*Services*/
+
+@media all and (max-width: 948px) {
+
+  nav{
+    padding: 0 0 150px 0;
+  }
+    .logo{
+    display: flex;
+  justify-content: center;
+    }
+
+  .Home-menu {
+  position: absolute;
+  margin-top: 25px;
+    }
+
+    nav ul {
+      left: 50%;
+  	transform: translateX(-50%);
+    width: fit-content;
+    }
+
+
+
+    .servicestitle{
+    	font-size: 4.5rem;
+    }
+
+    .servicestext{
+      width: 85%;
+    		font-size: 2.1rem;
+    }
+
+    .payment-text{
+    	font-size: 1.9rem;
+     width: 65%;
+    }
+
+    .services-treatments{
+    	  font-size: 3.2rem;
+    }
+
+    .treatment-desc{
+    	font-size: 2.1rem;
+    	text-align: center;
+    	width: 85%;
+    	margin: 10px auto 0 auto;
+    }
+
+    .treatment-cost{
+    	font-size: 2.85rem;
+    	text-align: center;
+    	width: fit-content;
+    	margin: 60px auto 0 auto;
+    }
+
+    .services-card-container a{
+       padding: 55px 15px;
+    	 font-size: 1.75rem;
+    	 transition: 0s;
+     }
+
+    .services-card-container a:hover{
+    	transform: scale(1);
+     }
+
+     #servicesbutton {
+     	display: none;
+     	position: fixed;
+     	bottom: 25px;
+     	right: 35px;
+       z-index: 99;
+     	font-size: 70px;
+     	border: none;
+     	outline: none;
+     	background-color: #cb0709;
+     	color: white;
+     	cursor: pointer;
+     	padding: 0 10px 2px 10px;
+     	border-radius: 50%;
+     	transition: .4s;
+     }
+
+     #servicesbutton:hover {
+     	background-color: #3d444f;
+     }
+
+
+
+}
+
+/*Services End*/
+
+/*Contact*/
+
+@media all and (max-width: 1295px) {
+
+.viewservicesbtn{
+  font-size: 25px;
+}
+
+.containercontact{
+position: relative;
+top: 4px;
+}
+
+.contact-box{
+background: #cb0709;
+display: block;
+}
+
+.contact-left{
+padding: 20px 40px;
+color: #dedede;
+background: #3d444f;
+border-radius: 85px 0 0 0;
+}
+
+.contact-right{
+	padding: 1px 40px;
+	background: #6B6B6B;
+	color: #dedede;
+	border-radius: 0 0 85px 0;
+}
+
+.contactmetext{
+  width: 90%;
+}
+
+input{
+  font-size: 25px;
+}
+
+textarea{
+  font-size: 25px;
+}
+
+.contactbtn{
+font-size: 25px;
+}
+
+table{
+  margin: 0 auto;
+}
+
+tr{
+  font-size: 25px;
+}
+
+.instagram-logo {
+	display: block;
+	margin: auto auto 50px auto;
+}
+
+#contactbutton {
+	position: fixed;
+	bottom: 25px;
+	right: 35px;
+  z-index: 99;
+	font-size: 70px;
+	border: none;
+	outline: none;
+	background-color: #3d444f;
+	color: white;
+	cursor: pointer;
+	padding: 0 10px 2px 10px;
+	border-radius: 50%;
+}
+
+#contactbutton:hover {
+	background-color: #555;
+	transition: .4s;
+}
+}
